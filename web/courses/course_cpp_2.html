@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OVERVIEW OF JAVA</title>
+<title>C++ Basic Syntax</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -103,8 +103,8 @@
                             <form action="#" class="header_search_form">
                                 <input type="search" class="search_input" placeholder="Search" required="required">
                                 <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
-									<i class="fa fa-search" aria-hidden="true"></i>
-								</button>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
                             </form>
                         </div>
                     </div>
@@ -116,98 +116,105 @@
 
     <!-- Sidebar -->
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccffcc" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #e3f2fd;" id="mySidebar">
 
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
             <i class="fa fa-remove"></i>
         </a>
-        <img src="../images/java.png" alt="" style="height:220px; width: 250px">
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">OVERVIEW OF JAVA</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">Java - Object and Classes</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">Java - Basic Datatypes</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">Java - Loop Control</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">Java - Decision Making</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">Java - Exceptions</a>
+        <img src="../images/cpp.jpg" alt="" style="height:220px; width: 260px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_1.html">OVERVIEW OF C++ LANGUAGE</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_2.html">C++ Basic Syntax</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_3.html">C++ Data Types</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_4.html">C++ Variable Types</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_5.html">C++ Constants/Literals</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_6.html">C++ Modifier Types</a>
         <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
-        
+      
 
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     <div class="tutorial">
-        <img src="../images/java1.png" style="height:180px; width: 1360px">
+        <img src="../images/cpp1.png" style="height:180px; width: 1460px">
     </div>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
         
-        <div style="background-color: #ccffcc">
-            
-         <div class="w3-row w3-padding-64">
+       <div style="background-color: #e3f2fd; "> 
+        <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <center><h2><b>OVERVIEW OF JAVA</b></h2></center>
-                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+                <center><h2><b>C++ Basic Syntax</b></h2></center>
+                <p>When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what a class, object, methods, and instant variables mean.
+                <p><b>Object :−</b> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors - wagging, barking, eating. An object is an instance of a class.
+                <p><b>Class :−</b> A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.
+                <p><b>Methods :−</b> A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.
+                <p><b>Instance Variables :−</b> Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.    
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Why to Learn java Programming?</h1>
-                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
-                <p><h4>Object Oriented :−</h4> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                <p><h4>Platform Independent :−</h4> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                <p><h4>Simple :−</h4> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                <p><h4>Secure :−</h4> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                <p><h4>Architecture-neutral :−</h4> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                <p><h4>Portable :−</h4> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset. 
-                <p><h4>Robust :−</h4> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-            </p>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Hello World using Java Programming.</h1>
-                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program
-                    <center><img src="../images/j1.png" style="height:220px; width: 520px"></center>
+                <h1 class="w3-text-teal">Compile and Execute C++ Program</h1>
+                <p>Let's look at how to save the file, compile and run the program. Please follow the steps given below −
+                <p>1. Open a text editor and add the code
+                <p>2. Save the file as: hello.cpp
+                <p>3. Open a command prompt and go to the directory where you saved the file.
+                <p>4. Type 'g++ hello.cpp' and press enter to compile your code. If there are no errors in your code the command prompt will take you to the next line and would generate a.out executable file.
+                <p>5. Now, type 'a.out' to run your program.
+                <p>6. You will be able to see ' Hello World ' printed on the window.    
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Applications of Java Programming</h1>
-                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.    
-                <p><h4>Multithreaded :−</h4>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                <p><h4>Interpreted :−</h4> Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                <p><h4>High Performance :−</h4>With the use of Just-In-Time compilers, Java enables high performance.
-                <p><h4>Distributed :−</h4>Java is designed for the distributed environment of the internet.
-                <p><h4>Dynamic :−</h4>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                <h1 class="w3-text-teal">C++ Identifiers</h1>
+                <p>A C++ identifier is a name used to identify a variable, function, class, module, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).
+                <p>C++ does not allow punctuation characters such as @, $, and % within identifiers. C++ is a case-sensitive programming language. Thus, Manpower and manpower are two different identifiers in C++.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Trigraphs</h1>
+                <p>A few characters have an alternative representation, called a trigraph sequence. A trigraph is a three-character sequence that represents a single character and the sequence always starts with two question marks.
+                <p>Trigraphs are expanded anywhere they appear, including within string literals and character literals, in comments, and in preprocessor directives.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Whitespace in C++</h1>
+                <p>A line containing only whitespace, possibly with a comment, is known as a blank line, and C++ compiler totally ignores it.
+                <p>Whitespace is the term used in C++ to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins.    
                 </p>
             </div>
         </div>
         
         
-
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
          <div class="w3-bar">   
             <div class="pagination justify-content-center">
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">1</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">2</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">3</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">4</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">5</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">6</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_6.html">6</a>
                 <a class="page-link" href="#">»</a>
             </div>    
          </div>      
         </div>
 
-        </div>
-        
+            </div>
+
+
+
         <!-- Footer -->
 
         <footer class="footer">

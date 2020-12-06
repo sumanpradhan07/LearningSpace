@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OVERVIEW OF JAVA</title>
+<title>Java - Object and Classes</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -140,56 +140,76 @@
     </div>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
-        
-        <div style="background-color: #ccffcc">
-            
-         <div class="w3-row w3-padding-64">
+       
+      <div style="background-color: #ccffcc">
+        <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <center><h2><b>OVERVIEW OF JAVA</b></h2></center>
-                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+                <center><h2><b>Java - Object and Classes</b></h2></center>
+                <p>Java is an Object-Oriented Language. As a language that has the Object-Oriented feature, Java supports the following fundamental concepts −
+                <center>
+                <p>1.Polymorphism
+                <p>2.Inheritance
+                <p>3.Encapsulation
+                <p>4.Abstraction
+                <p>5.Classes
+                <p>6.Objects
+                <p>7.Instance
+                <p>8.Method
+                <p>9.Message Passing</center>
+                <p><h4>Object :−</h4> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, barking, eating. An object is an instance of a class.
+                <p><h4>Class :−</h4> A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.  
+                
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Why to Learn java Programming?</h1>
-                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
-                <p><h4>Object Oriented :−</h4> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                <p><h4>Platform Independent :−</h4> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                <p><h4>Simple :−</h4> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                <p><h4>Secure :−</h4> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                <p><h4>Architecture-neutral :−</h4> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                <p><h4>Portable :−</h4> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset. 
-                <p><h4>Robust :−</h4> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-            </p>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Hello World using Java Programming.</h1>
-                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program
-                    <center><img src="../images/j1.png" style="height:220px; width: 520px"></center>
+                <h1 class="w3-text-teal">Objects in Java</h1>
+                <p>Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior.
+                <p>If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.
+                <p>If you compare the software object with a real-world object, they have very similar characteristics.
+                <p>If you compare the software object with a real-world object, they have very similar characteristics.
+                <p>So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Applications of Java Programming</h1>
-                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.    
-                <p><h4>Multithreaded :−</h4>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                <p><h4>Interpreted :−</h4> Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                <p><h4>High Performance :−</h4>With the use of Just-In-Time compilers, Java enables high performance.
-                <p><h4>Distributed :−</h4>Java is designed for the distributed environment of the internet.
-                <p><h4>Dynamic :−</h4>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                <h1 class="w3-text-teal">Classes in Java</h1>
+                <p>A class can contain any of the following variable types.
+                <p><h4>Local variables :−</h4>Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
+                <p><h4>Instance variables :−</h4>Instance variables are variables within a class but outside any method. These variables are initialized when the class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
+                <p><h4>Class variables :−</h4>Class variables are variables declared within a class, outside any method, with the static keyword.</p>
+                <p>A class can have any number of methods to access the value of various kinds of methods. In the above example, barking(), hungry() and sleeping() are methods.
+                <p>Following are some of the important topics that need to be discussed when looking into classes of the Java Language. 
                 </p>
             </div>
         </div>
         
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Constructors</h1>
+                <p>When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.
+                <p>Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.    
+                </p>
+            </div>
+        </div>
         
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Creating an Object</h1>
+                <p>As mentioned previously, a class provides the blueprints for objects. So basically, an object is created from a class. In Java, the new keyword is used to create new objects.
+                <p>There are three steps when creating an object from a class −
+                <p><h4>Declaration −</h4>A variable declaration with a variable name with an object type.
+                <p><h4>Instantiation −</h4>The 'new' keyword is used to create the object.
+                <p><h4>Initialization − </h4>The 'new' keyword is followed by a call to a constructor. This call initializes the new object.    
+                </p>
+            </div>
+        </div>
+        
+      
 
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
@@ -207,7 +227,9 @@
         </div>
 
         </div>
-        
+
+
+
         <!-- Footer -->
 
         <footer class="footer">

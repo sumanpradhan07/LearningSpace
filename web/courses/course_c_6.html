@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OVERVIEW OF JAVA</title>
+<title>FUNCTIONS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -116,98 +116,111 @@
 
     <!-- Sidebar -->
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccffcc" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccccff" id="mySidebar">
 
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
             <i class="fa fa-remove"></i>
         </a>
-        <img src="../images/java.png" alt="" style="height:220px; width: 250px">
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">OVERVIEW OF JAVA</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">Java - Object and Classes</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">Java - Basic Datatypes</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">Java - Loop Control</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">Java - Decision Making</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">Java - Exceptions</a>
+        <img src="../images/course_5.jpg" alt="" style="height:220px; width: 260px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_1.html">OVERVIEW OF C LANGUAGE</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_2.html">C LANGUAGE FUNDAMENTALS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_3.html">DATA INPUT AND OUTPUT</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_4.html">DECISION CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_5.html">LOOP CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_c_6.html">FUNCTIONS</a>
         <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
-        
+       
 
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     <div class="tutorial">
-        <img src="../images/java1.png" style="height:180px; width: 1360px">
+        <img src="../images/Course_banner.jpg" style="height:180px; width: 1460px">
     </div>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
         
-        <div style="background-color: #ccffcc">
-            
+        <div style="background-color: #ccccff ">
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <center><h2><b>FUNCTIONS</b></h2></center>
+                <p>A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions.
+                <p>You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division is such that each function performs a specific task.
+                <p>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+                <p>The C standard library provides numerous built-in functions that your program can call. For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
+                <p>A function can also be referred as a method or a sub-routine or a procedure, etc.   
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Defining a Function</h1>
+                <p>A function definition in C programming consists of a function header and a function body. Here are all the parts of a function −
+                <p>1.Return Type − A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.
+                <p>2.Function Name − This is the actual name of the function. The function name and the parameter list together constitute the function signature.
+                <p>3.Parameters − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.
+                <p>4.Function Body − The function body contains a collection of statements that define what the function does.
+                </p>
+            </div>
+        </div>
+        
          <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <center><h2><b>OVERVIEW OF JAVA</b></h2></center>
-                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+                <h1 class="w3-text-teal">Function Declarations</h1>
+                <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+                <p>Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.   
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Why to Learn java Programming?</h1>
-                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
-                <p><h4>Object Oriented :−</h4> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                <p><h4>Platform Independent :−</h4> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                <p><h4>Simple :−</h4> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                <p><h4>Secure :−</h4> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                <p><h4>Architecture-neutral :−</h4> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                <p><h4>Portable :−</h4> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset. 
-                <p><h4>Robust :−</h4> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-            </p>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Hello World using Java Programming.</h1>
-                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program
-                    <center><img src="../images/j1.png" style="height:220px; width: 520px"></center>
+                <h1 class="w3-text-teal">Calling a Function</h1>
+                <p>
+                  While creating a C function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task.
+
+                    When a program calls a function, the program control is transferred to the called function. A called function performs a defined task and when its return statement is executed or when its function-ending closing brace is reached, it returns the program control back to the main program.
+
+                    To call a function, you simply need to pass the required parameters along with the function name, and if the function returns a value, then you can store the returned value.  
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Applications of Java Programming</h1>
-                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.    
-                <p><h4>Multithreaded :−</h4>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                <p><h4>Interpreted :−</h4> Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                <p><h4>High Performance :−</h4>With the use of Just-In-Time compilers, Java enables high performance.
-                <p><h4>Distributed :−</h4>Java is designed for the distributed environment of the internet.
-                <p><h4>Dynamic :−</h4>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                <h1 class="w3-text-teal">Function Arguments</h1>
+                <p>
+                    f a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.
+
+                    Formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.
                 </p>
             </div>
         </div>
         
-        
+       
 
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
          <div class="w3-bar">   
             <div class="pagination justify-content-center">
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">1</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">2</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">3</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">4</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">5</a>
-                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">6</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_c_6.html">6</a>
                 <a class="page-link" href="#">»</a>
             </div>    
          </div>      
         </div>
 
-        </div>
-        
+         </div>
+
+
+
         <!-- Footer -->
 
         <footer class="footer">

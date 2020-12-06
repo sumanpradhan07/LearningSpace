@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OVERVIEW OF JAVA</title>
+<title>Java - Loop Control</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -140,57 +140,133 @@
     </div>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
-        
+       
         <div style="background-color: #ccffcc">
-            
-         <div class="w3-row w3-padding-64">
+        
+       <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <center><h2><b>OVERVIEW OF JAVA</b></h2></center>
-                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+                <center><h2><b>Java - Loop Control</b></h2></center>
+                <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+                <p>Programming languages provide various control structures that allow for more complicated execution paths.    
+                <p>A <b>loop</b> statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages −
+                <center><img src="../images/2.jpg"></center>
+                <p>Java programming language provides the following types of loop to handle looping requirements. 
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Why to Learn java Programming?</h1>
-                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
-                <p><h4>Object Oriented :−</h4> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                <p><h4>Platform Independent :−</h4> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                <p><h4>Simple :−</h4> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                <p><h4>Secure :−</h4> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                <p><h4>Architecture-neutral :−</h4> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                <p><h4>Portable :−</h4> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset. 
-                <p><h4>Robust :−</h4> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-            </p>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Hello World using Java Programming.</h1>
-                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program
-                    <center><img src="../images/j1.png" style="height:220px; width: 520px"></center>
+                <h1 class="w3-text-teal">while loop</h1>
+                <p>A while loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.
+                <p>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non zero value.
+                <p>When executing, if the boolean_expression result is true, then the actions inside the loop will be executed. This will continue as long as the expression result is true.
+                <p>When the condition becomes false, program control passes to the line immediately following the loop.    
                 </p>
             </div>
         </div>
         
-        <div class="w3-row w3-padding-64">
+        <div class="w3-row w3-padding-34">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Applications of Java Programming</h1>
-                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.    
-                <p><h4>Multithreaded :−</h4>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                <p><h4>Interpreted :−</h4> Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                <p><h4>High Performance :−</h4>With the use of Just-In-Time compilers, Java enables high performance.
-                <p><h4>Distributed :−</h4>Java is designed for the distributed environment of the internet.
-                <p><h4>Dynamic :−</h4>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="../images/3.jpg"></center>
+                <p>
+                   Here, key point of the while loop is that the loop might not ever run. When the expression is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed. 
                 </p>
             </div>
         </div>
-        
-        
 
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal"> for loop </h1>
+                <p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times.
+                <p>A for loop is useful when you know how many times a task is to be repeated.
+                <p>Here is the flow of control in a for loop −
+                <p>The initialization step is executed first, and only once. This step allows you to declare and initialize any loop control variables and this step ends with a semi colon (;).
+                <p>Next, the Boolean expression is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop will not be executed and control jumps to the next statement past the for loop.
+                <p>After the body of the for loop gets executed, the control jumps back up to the update statement. This statement allows you to update any loop control variables. This statement can be left blank with a semicolon at the end.
+                <p>The Boolean expression is now evaluated again. If it is true, the loop executes and the process repeats (body of loop, then update step, then Boolean expression). After the Boolean expression is false, the for loop terminates.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+               <center><img src="../images/4.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">do...while loop</h1>
+                <p>A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+                <p>Notice that the Boolean expression appears at the end of the loop, so the statements in the loop execute once before the Boolean is tested.
+                <p>If the Boolean expression is true, the control jumps back up to do statement, and the statements in the loop execute again. This process repeats until the Boolean expression is false.   
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="../images/5.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Loop Control Statements</h1>
+                <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed
+                <p>Java supports the following control statements.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal"> break statement</h1>
+                <p>When the break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.
+                <p>It can be used to terminate a case in the switch statement (covered in the next chapter).    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="../images/6.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Continue statement</h1>
+                <p>The continue keyword can be used in any of the loop control structures. It causes the loop to immediately jump to the next iteration of the loop.
+                <p>In a for loop, the continue keyword causes control to immediately jump to the update statement.
+                <p>In a while loop or do/while loop, control immediately jumps to the Boolean expression.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="../images/7.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Enhanced for loop in Java</h1>
+                <p>As of Java 5, the enhanced for loop was introduced. This is mainly used to traverse collection of elements including arrays.
+                <p><h4>Declaration :−</h4>The newly declared block variable, is of a type compatible with the elements of the array you are accessing. The variable will be available within the for block and its value would be the same as the current array element.
+                <p><h4>Expression :−</h4>This evaluates to the array you need to loop through. The expression can be an array variable or method call that returns an array.    
+                </p>
+            </div>
+        </div>
+        
+        
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
          <div class="w3-bar">   
@@ -207,7 +283,9 @@
         </div>
 
         </div>
-        
+
+
+
         <!-- Footer -->
 
         <footer class="footer">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OVERVIEW OF JAVA</title>
+<title>Java - Exceptions</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -140,57 +140,80 @@
     </div>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
-        
+       
         <div style="background-color: #ccffcc">
-            
-         <div class="w3-row w3-padding-64">
+        
+        <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <center><h2><b>OVERVIEW OF JAVA</b></h2></center>
-                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+                <center><h2><b>Java - Exceptions</b></h2></center>
+                <p>An <b>exception</b> (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
+                <p>An exception can occur for many different reasons. Following are some scenarios where an exception occurs
+                <p>1. A user has entered an invalid data.
+                <p>2. A file that needs to be opened cannot be found.
+                <p>3. A network connection has been lost in the middle of communications or the JVM has run out of memory.
+                <p>Some of these exceptions are caused by user error, others by programmer error, and others by physical resources that have failed in some manner.
+                <p>Based on these, we have three categories of Exceptions. You need to understand them to know how exception handling works in Java.
+                <p><b>Checked exceptions :−</b> A checked exception is an exception that is checked (notified) by the compiler at compilation-time, these are also called as compile time exceptions. These exceptions cannot simply be ignored, the programmer should take care of (handle) these exceptions.
+                <p>For example, if you use FileReader class in your program to read data from a file, if the file specified in its constructor doesn't exist, then a FileNotFoundException occurs, and the compiler prompts the programmer to handle the exception.    
+                <p><b>Note :−</b> Since the methods read() and close() of FileReader class throws IOException, you can observe that the compiler notifies to handle IOException, along with FileNotFoundException.
+                <p><b>Unchecked exceptions :−</b> An unchecked exception is an exception that occurs at the time of execution. These are also called as Runtime Exceptions. These include programming bugs, such as logic errors or improper use of an API. Runtime exceptions are ignored at the time of compilation.
+                <p>For example, if you have declared an array of size 5 in your program, and trying to call the 6th element of the array then an ArrayIndexOutOfBoundsExceptionexception occurs.
+                <p><b>Errors :−</b> These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation.
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Why to Learn java Programming?</h1>
-                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
-                <p><h4>Object Oriented :−</h4> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                <p><h4>Platform Independent :−</h4> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                <p><h4>Simple :−</h4> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                <p><h4>Secure :−</h4> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                <p><h4>Architecture-neutral :−</h4> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                <p><h4>Portable :−</h4> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset. 
-                <p><h4>Robust :−</h4> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-            </p>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Hello World using Java Programming.</h1>
-                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program
-                    <center><img src="../images/j1.png" style="height:220px; width: 520px"></center>
+                <h1 class="w3-text-teal">Exception Hierarchy</h1>
+                <p>All exception classes are subtypes of the java.lang.Exception class. The exception class is a subclass of the Throwable class. Other than the exception class there is another subclass called Error which is derived from the Throwable class.
+                <p>Errors are abnormal conditions that happen in case of severe failures, these are not handled by the Java programs. Errors are generated to indicate errors generated by the runtime environment. Example: JVM is out of memory. Normally, programs cannot recover from errors.
+                <p>The Exception class has two main subclasses: IOException class and RuntimeException Class.
+                <center><img src="../images/8.jpg"></center>   
                 </p>
             </div>
         </div>
         
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Applications of Java Programming</h1>
-                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.    
-                <p><h4>Multithreaded :−</h4>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                <p><h4>Interpreted :−</h4> Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                <p><h4>High Performance :−</h4>With the use of Just-In-Time compilers, Java enables high performance.
-                <p><h4>Distributed :−</h4>Java is designed for the distributed environment of the internet.
-                <p><h4>Dynamic :−</h4>Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                <h1 class="w3-text-teal">Catching Exceptions</h1>
+                <p>A method catches an exception using a combination of the <b>try</b> and <b>catch</b> keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+                <p>The code which is prone to exceptions is placed in the try block. When an exception occurs, that exception occurred is handled by catch block associated with it. Every try block should be immediately followed either by a catch block or finally block.
+                <p>A catch statement involves declaring the type of exception you are trying to catch. If an exception occurs in protected code, the catch block (or blocks) that follows the try is checked. If the type of exception that occurred is listed in a catch block, the exception is passed to the catch block much as an argument is passed into a method parameter.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Multiple Catch Blocks</h1>
+                <p>The previous statements demonstrate three catch blocks, but you can have any number of them after a single try. If an exception occurs in the protected code, the exception is thrown to the first catch block in the list. If the data type of the exception thrown matches ExceptionType1, it gets caught there. If not, the exception passes down to the second catch statement. This continues until the exception either is caught or falls through all catches, in which case the current method stops execution and the exception is thrown down to the previous method on the call stack.
+                    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">The Throws/Throw Keywords</h1>
+                <p>If a method does not handle a checked exception, the method must declare it using the <b>throws</b> keyword. The throws keyword appears at the end of a method's signature.
+                <p>You can throw an exception, either a newly instantiated one or an exception that you just caught, by using the <b>throw</b> keyword.
+                <p>Try to understand the difference between throws and throw keywords, throws is used to postpone the handling of a checked exception and throw is used to invoke an exception explicitly.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Common Exceptions</h1>
+                <p>In Java, it is possible to define two catergories of Exceptions and Errors.
+                <p><b>JVM Exceptions :−</b> These are exceptions/errors that are exclusively or logically thrown by the JVM. Examples: NullPointerException, ArrayIndexOutOfBoundsException, ClassCastException.
+                <p><b>Programmatic Exceptions :−</b> These exceptions are thrown explicitly by the application or the API programmers. Examples: IllegalArgumentException, IllegalStateException.    
                 </p>
             </div>
         </div>
         
         
-
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
          <div class="w3-bar">   
@@ -207,7 +230,8 @@
         </div>
 
         </div>
-        
+
+
         <!-- Footer -->
 
         <footer class="footer">
